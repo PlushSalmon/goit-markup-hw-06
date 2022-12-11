@@ -386,9 +386,13 @@
       <div class="footer-window-field">
         <form>
           <div class="email-footer-wrap">
-            <label for="input-footer">Підпишіться на розсилку</label>
-            <input сlass="input-footer" id="input-footer" type="email" placeholder="E-mail" name="intup-footer">
-            <button class="btn-email-footer" type="submit"></button>
+            <label class="label-footer" for="input-footer">Підпишіться на розсилку</label>
+            <div class="footer-input-box">
+              <input class="input-footer" id="input-footer" type="email" placeholder="E-mail" name="intup-footer">
+              <button class="btn-email-footer" type="submit">Підписатися<svg class="send-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-icon-send-1"></use>
+              </svg></button>
+            </div>
           </div>
         </form>
       </div>
@@ -440,7 +444,7 @@
         </div>
         <div class="modal-field">
           <input class="check-input visually-hidden" id="privacy" type="checkbox" name="privacy" />
-          <label class="check-text" for="privacy">Погоджуюся з розсилкою та приймаю Умови договору</label>
+          <label class="check-text" for="privacy">Погоджуюся з розсилкою та приймаю <a class="terms-agreement" href="">Умови договору</a></label>
         </div>
         <div class="btn-flex"><button class="modal-button" type="submit">Відправити</button></в>
       </form>
